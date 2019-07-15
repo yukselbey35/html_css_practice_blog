@@ -18,9 +18,9 @@ h2 {
 	font-weight: 500;
 }
 
-#container {
+.container {
 	width: 1200px;
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 #blog-post-container {
@@ -33,14 +33,14 @@ h2 {
 	float: left;
 	padding-left: 20px;
 	position: fixed;
-	right: 40px;
+	right: 60px;
 }
 
 #author-box {}
 
 .box {
 	background: white;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	border-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -50,11 +50,15 @@ h2 {
 .p20{
 	padding: 20px;
 }
+.mt20{
+	margin-top: 20px;
+}
 .blog-post {
 	position: relative;
 }
 
 .blog-post img {
+	height: 60%;
 	width: 100%;
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -134,11 +138,14 @@ h2 {
 	color:rgb(19, 32, 204);
 }
 
-ul{
+li{
+	list-style: none;
+}
+.tags ul{
 	list-style-type: none;	
 }
 
-ul li{
+.tags ul li{
 	margin-bottom: 10px;
 }
 
@@ -222,4 +229,34 @@ ul li{
 .opl:hover{
 	text-decoration: none;
 	color: red;
+}
+/* Nav Bar Style*/
+#nav{
+	background-color: #333;
+}
+
+#nav ul{
+	list-style-type: none;
+	overflow:hidden;
+}
+#nav li{
+	float: left;
+}
+
+#nav li a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s linear;
+}
+
+#nav li a:hover {
+	background-color: rgb(226, 59, 59);
+	color: white;
+
+}
+.active{
+	background-color: rgb(83, 68, 218);
 }
